@@ -4,8 +4,8 @@ require('dotenv').config();
 
 exports.handler = async (event) => {
   console.log(s3);
-  let bucket = event["Records"][0]["s3"]["bucket"];
-  let object = event["Records"][0]["s3"]["object"];
+  let bucket = event['Records'][0]['s3']['bucket'];
+  let object = event['Records'][0]['s3']['object'];
   console.log(bucket, object);
 
   const response = {
