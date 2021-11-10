@@ -1,9 +1,5 @@
-name: aws-deploy
-
-on:
-  push:
-    branches:
-      - main
+name: Deploy to AWS Lambda
+on: [push]
 
 jobs:
   deploy_source:
